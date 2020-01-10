@@ -25,11 +25,11 @@
 # 888888888888888888888888888888888888888888888888888888888888888888888888888888
 
 # Configure only hard coded db connection here.
-db_connection = r'Database Connections\\Connection to Carta on SQL2016STG.sde'
+db_connection = r'Database Connections\\Connection to YourDB.sde'
 
 # Configure the e-mail server and other info here.
-mail_server = 'smtprelay.bellevuewa.gov'
-mail_from = 'SDE Database Status <gisdba@bellevuewa.gov>'
+mail_server = 'smtprelay.yours.gov'
+mail_from = 'SDE Database Status <yours@yours.gov>'
 
 # ------------------------------------------------------------------------------
 # DO NOT UPDATE BELOW THIS LINE OR RISK DOOM AND DISPAIR!  Have a nice day!
@@ -151,7 +151,7 @@ def send_message(mail_body, mail_subject, mail_priority):
 
     mail_body = mail_body + ('\n\n[SYSTEM AUTO GENERATED MESSAGE]')
 
-    email_target = 'gisdba@bellevuewa.gov'
+    email_target = 'yours@yours.gov'
 
     send_mail = 'To: {0}\nFrom: {1}\nX-Priority: {2}\nSubject: {3}\n\n{4}'.format(email_target, mail_from, mail_priority, mail_subject, mail_body)
 
